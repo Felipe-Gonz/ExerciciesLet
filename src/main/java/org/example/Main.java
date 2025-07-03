@@ -1,18 +1,22 @@
 package org.example;
 
 import org.example.easy.Palindrome;
+import org.example.easy.RomanToInteger;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
 
-        Palindrome palindrome = new Palindrome();
+        /*Palindrome palindrome = new Palindrome();
         palindrome.x = 121;
 
         boolean resultado = palindrome.evaluar();
-        System.out.println("Es Palindrome? " + resultado);
+        System.out.println("Es Palindrome? " + resultado); **/
+
+        RomanToInteger romanToInteger = new RomanToInteger();
+        int resultado = romanToInteger.romanToInt("MCMXCIV");
+        System.out.println("Resultado: " + resultado);
+
     }
 }
