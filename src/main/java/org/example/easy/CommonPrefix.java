@@ -8,11 +8,14 @@ public class CommonPrefix {
             return "";
         }
 
-        String palabraBase = palabras[0];;
+        String palabraBase = palabras[0];
+        if (palabraBase.length() == 0) {
+            return "";
+        }
 
 
-        for(int i = 0; i < palabras.length; i++){
 
+        for(int i = 0; i < palabraBase.length(); i++){
             char letraActual = palabraBase.charAt(i);
 
             for (int j = 1; j < palabras.length; j++){
@@ -21,6 +24,6 @@ public class CommonPrefix {
                 }
             }
         }
-        return "";
+        return palabraBase;
     }
 }
