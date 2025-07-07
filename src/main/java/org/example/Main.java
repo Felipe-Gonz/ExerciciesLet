@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.easy.CommonPrefix;
 import org.example.easy.Palindrome;
 import org.example.easy.RomanToInteger;
 
@@ -14,9 +15,13 @@ public class Main {
         boolean resultado = palindrome.evaluar();
         System.out.println("Es Palindrome? " + resultado); **/
 
-        RomanToInteger romanToInteger = new RomanToInteger();
+        /*RomanToInteger romanToInteger = new RomanToInteger();
         int resultado = romanToInteger.romanToInt("MCMXCIV");
-        System.out.println("Resultado: " + resultado);
+        System.out.println("Resultado: " + resultado); **/
+
+        CommonPrefix commonPrefix = new CommonPrefix();
+        String[] ejemplo = {"flower", "flow", "flight"};
+        System.out.println(commonPrefix.Prefijo(ejemplo));
 
     }
 }
