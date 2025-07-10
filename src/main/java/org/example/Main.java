@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.easy.CommonPrefix;
 import org.example.easy.Palindrome;
+import org.example.easy.Parentheses;
 import org.example.easy.RomanToInteger;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -19,9 +20,13 @@ public class Main {
         int resultado = romanToInteger.romanToInt("MCMXCIV");
         System.out.println("Resultado: " + resultado); **/
 
-        CommonPrefix commonPrefix = new CommonPrefix();
+        /*CommonPrefix commonPrefix = new CommonPrefix();
         String[] ejemplo = {"flower", "flow", "flight"};
-        System.out.println(commonPrefix.Prefijo(ejemplo));
+        System.out.println(commonPrefix.Prefijo(ejemplo)); **/
+
+        Parentheses parentheses = new Parentheses();
+        Boolean parentesis = parentheses.isValid("(()");
+        System.out.println("Resultado:" + parentesis);
 
     }
 }
