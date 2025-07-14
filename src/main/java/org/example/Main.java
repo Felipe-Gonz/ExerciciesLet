@@ -25,7 +25,7 @@ public class Main {
         Boolean parentesis = parentheses.isValid("(()");
         System.out.println("Resultado:" + parentesis);**/
 
-        ListNode list1 = new ListNode(1);
+        /*ListNode list1 = new ListNode(1);
         list1.next = new ListNode(2);
         list1.next.next = new ListNode(4);
 
@@ -39,8 +39,16 @@ public class Main {
         while (merged != null){
             System.out.println(merged.val + " ");
             merged = merged.next;
-        }
+        }**/
 
+        DuplicatesArrays duplicatesArrays = new DuplicatesArrays();
+        int[] Num = {0, 1, 0, 3, 4, 4, 2, 2};
+        int k = duplicatesArrays.removeDuplicates(Num);
+        System.out.println("Numero de numeros unicos " + k );
+
+        for (int i = 0; i < k; i++){
+            System.out.print(Num[i] + " ");
+        }
 
     }
 }
