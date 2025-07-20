@@ -11,21 +11,21 @@ public class Main {
         palindrome.x = 121;
 
         boolean resultado = palindrome.evaluar();
-        System.out.println("Es Palindrome? " + resultado); **/
+        System.out.println("Es Palindrome? " + resultado);
 
-        /*RomanToInteger romanToInteger = new RomanToInteger();
+        RomanToInteger romanToInteger = new RomanToInteger();
         int resultado = romanToInteger.romanToInt("MCMXCIV");
-        System.out.println("Resultado: " + resultado); **/
+        System.out.println("Resultado: " + resultado);
 
-        /*CommonPrefix commonPrefix = new CommonPrefix();
+        CommonPrefix commonPrefix = new CommonPrefix();
         String[] ejemplo = {"flower", "flow", "flight"};
-        System.out.println(commonPrefix.Prefijo(ejemplo)); **/
+        System.out.println(commonPrefix.Prefijo(ejemplo));
 
-        /*Parentheses parentheses = new Parentheses();
+        Parentheses parentheses = new Parentheses();
         Boolean parentesis = parentheses.isValid("(()");
-        System.out.println("Resultado:" + parentesis);**/
+        System.out.println("Resultado:" + parentesis);
 
-        /*ListNode list1 = new ListNode(1);
+        ListNode list1 = new ListNode(1);
         list1.next = new ListNode(2);
         list1.next.next = new ListNode(4);
 
@@ -39,7 +39,7 @@ public class Main {
         while (merged != null){
             System.out.println(merged.val + " ");
             merged = merged.next;
-        }**/
+        }
 
         DuplicatesArrays duplicatesArrays = new DuplicatesArrays();
         int[] Num = {0, 1, 0, 3, 4, 4, 2, 2};
@@ -48,7 +48,17 @@ public class Main {
 
         for (int i = 0; i < k; i++){
             System.out.print(Num[i] + " ");
-        }
+        } **/
 
+        RemoveElement removeElement = new RemoveElement();
+        int[] Num = {3,2,2,3};
+        int val = 3;
+        int k = removeElement.removeElements(Num, val);
+        System.out.println("Numero removido " + k);
+        System.out.print("Nums[");
+        for (int i = 0; i < k; i++){
+            System.out.print(Num[i] + ", ");
+        }
+        System.out.print("]");
     }
 }
