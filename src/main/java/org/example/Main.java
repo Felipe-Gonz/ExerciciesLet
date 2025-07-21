@@ -48,7 +48,7 @@ public class Main {
 
         for (int i = 0; i < k; i++){
             System.out.print(Num[i] + " ");
-        } **/
+        }
 
         RemoveElement removeElement = new RemoveElement();
         int[] Num = {3,2,2,3};
@@ -59,6 +59,12 @@ public class Main {
         for (int i = 0; i < k; i++){
             System.out.print(Num[i] + ", ");
         }
-        System.out.print("]");
+        System.out.print("]"); **/
+
+        FindtheIndex findtheIndex = new FindtheIndex();
+        String palabra = "mississippi";
+        String palabra2= "issip";
+        int valor = findtheIndex.strStr(palabra, palabra2);
+        System.out.println("La Respuesta es: " + valor);
     }
 }
