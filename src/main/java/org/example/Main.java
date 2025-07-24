@@ -65,12 +65,17 @@ public class Main {
         String palabra = "mississippi";
         String palabra2= "issip";
         int valor = findtheIndex.strStr(palabra, palabra2);
-        System.out.println("La Respuesta es: " + valor); **/
+        System.out.println("La Respuesta es: " + valor);
 
         InsertPosition insertPosition = new InsertPosition();
         int[] Nums = {1,3,5,6};
         int tgt = 5;
         int k = insertPosition.searchInsert(Nums, tgt);
-        System.out.println("La respuesta es: " + k);
+        System.out.println("La respuesta es: " + k); **/
+
+        LengthLastWord lengthLastWord = new LengthLastWord();
+        String palabra = "Hello World";
+        int k = lengthLastWord.lengthOfLastWord(palabra);
+        System.out.println("El resultado es: " + k);
     }
 }
